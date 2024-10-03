@@ -30,9 +30,9 @@ function shuffle(array) {
 
   shuffle(words);
 
-const optionsContainer = document.getElementById('options-container');
-const optionButtons = words.map(word => {
-    const button = document.createElement('button');
+var optionsContainer = document.getElementById('options-container');
+var optionButtons = words.map(word => {
+    var button = document.createElement('button');
     button.textContent = word.english;
     button.addEventListener('click', () => checkAnswer(word.english));
     optionsContainer.appendChild(button);
@@ -44,12 +44,12 @@ shuffle(words);
 var currentQuestionIndex = 0;
 var score = 0;
 
-const questionElement = document.getElementById('question');
-const feedbackElement = document.getElementById('feedback');
-const scoreElement = document.getElementById('score');
+var questionElement = document.getElementById('question');
+var feedbackElement = document.getElementById('feedback');
+var scoreElement = document.getElementById('score');
 
 function displayQuestion() {
-    const currentQuestion = words[currentQuestionIndex];
+    var currentQuestion = words[currentQuestionIndex];
     questionElement.textContent = currentQuestion.spanish;
 
     
@@ -57,7 +57,7 @@ function displayQuestion() {
 }
 
 function checkAnswer(selectedAnswer) {
-    const currentQuestion = words[currentQuestionIndex];
+    var currentQuestion = words[currentQuestionIndex];
 
     if (selectedAnswer === currentQuestion.english) {
         score++;
