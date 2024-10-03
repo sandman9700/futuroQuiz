@@ -39,7 +39,7 @@
   button {
       padding: 10px;
       margin: 10px;
-      background-color: #55c259;
+      background-color: var(--color-4);
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -47,7 +47,7 @@
   }
   
   button:hover {
-      background-color: #5acc5f;
+      background-color: #104274;
   }
 
   h1, a {
@@ -83,6 +83,12 @@
 
   a:hover {
     color: rgb(211, 211, 211);
+  }
+
+  img[src="answers.jpg"] {
+    max-width: 1000px;
+    width: 100%;
+    border: 10px solid var(--color-4);
   }
 
   

@@ -1,15 +1,26 @@
+// accent e = \xE9
+// accent a = \xE1
+
 var clickedButton;
 const words = [
-    { spanish: 'aba (He/She)', english: '\xC9l/Ella/Usted (AR)' },
-    { spanish: 'aba (I)', english: 'Yo (AR)' },
-    { spanish: '\xEDa (I)', english: 'Yo (ER/IR)' },
-    { spanish: '\xEDas', english: 'T\xFA (ER/IR)' },
-    { spanish: '\xE1bamos', english: 'Nosotros (AR)' },
-    { spanish: '\xEDan', english: 'Ellos/Ellas/Ustedes (ER/IR)' },
-    { spanish: '\xEDamos', english: 'Nosotros (ER/IR)' },
-    { spanish: 'abas', english: 'T\xFA (AR)' },
-    { spanish: 'aban', english: 'Ellos/Ellas/Ustedes (AR)' },
-    { spanish: '\xEDa (He/She)', english: '\xC9l/Ella/Usted (ER/IR)' }
+    { spanish: 'ar\xE1', english: '\xC9l/Ella/Usted (AR)' },
+    { spanish: 'ar\xE9', english: 'Yo (AR)' },
+    { spanish: 'er\xE9', english: 'Yo (ER)' },
+    { spanish: 'er\xE1s', english: 'T\xFA (ER)' },
+    { spanish: 'aremos', english: 'Nosotros (AR)' },
+    { spanish: 'er\xE1n', english: 'Ellos/Ellas/Ustedes (ER)' },
+    { spanish: 'eremos', english: 'Nosotros (ER)' },
+    { spanish: 'ar\xE1s', english: 'T\xFA (AR)' },
+    { spanish: 'ar\xE1n', english: 'Ellos/Ellas/Ustedes (AR)' },
+    { spanish: 'er\xE1n', english: '\xC9l/Ella/Usted (ER)' },
+    { spanish: 'ir\xE1', english: '\xC9l/Ella/Usted (IR)' },
+    { spanish: 'er\xE9', english: 'Yo (IR)' },
+    { spanish: 'ir\xE1s', english: 'T\xFA (IR)' },
+    { spanish: 'ir\xE1n', english: 'Ellos/Ellas/Ustedes (IR)' },
+    { spanish: 'iremos', english: 'Nosotros (IR)' },
+    { spanish: 'ar\xE9is', english: 'Vosotros (AR)' },
+    { spanish: 'er\xE9is', english: 'Vosotros (ER)' },
+    { spanish: 'ir\xE9is', english: 'Vosotros (IR)' }
 ];
 
 function shuffle(array) {
